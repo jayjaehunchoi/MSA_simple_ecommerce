@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+# msa id 값
+spring:
+  application:
+    name: discoveryservice
+
+# false하지 않으면 server를 클라이언트로 등록하게됨.
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
