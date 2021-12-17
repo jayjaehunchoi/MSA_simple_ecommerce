@@ -2,6 +2,7 @@ package com.example.userservice.controller;
 
 import com.example.userservice.domain.User;
 import com.example.userservice.domain.UserService;
+import com.example.userservice.dto.LoginRequestDto;
 import com.example.userservice.dto.UserRequestDto;
 import com.example.userservice.dto.UserResponseDto;
 import com.example.userservice.dto.UserResponseDtos;
@@ -19,7 +20,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/user-service")
+@RequestMapping
 public class UsersController {
 
     private final UserService userService;

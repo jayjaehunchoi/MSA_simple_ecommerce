@@ -20,7 +20,8 @@ public class JwtProvider {
     public String createToken(Long id) {
         return Jwts.builder()
                 .setSubject(String.valueOf(id))
-                .setExpiration(new Date(Long.parseLong(expireDate)))
+                .setExpiration(new Date(System.currentTimeMillis() +
+                        Long.parseLong(expireDate)))
                 .signWith(SignatureAlgorithm.HS512, secretKey)
                 .compact();
 
