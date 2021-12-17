@@ -1,4 +1,4 @@
-package com.example.cloud;
+package com.example.cloud.config;
 
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
