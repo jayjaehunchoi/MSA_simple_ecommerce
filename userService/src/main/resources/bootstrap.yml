@@ -1,0 +1,6 @@
+# 원래 application.yml보다 우선순위를 갖기 위해 따로 분리
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      name: ecommerce
